@@ -1,7 +1,7 @@
 const Controller = require('./controller.js')
 
 let deviceId = 'temperatureController'
-let brokerAddress = '192.168.0.250'
+let brokerAddress = 'localhost'
 var counter = 0 //used for simulation of telemetry data
 const controller = new Controller(deviceId, brokerAddress)
 
