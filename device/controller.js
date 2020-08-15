@@ -283,14 +283,14 @@ class Controller {
     //this.publishBirth()
   }
 
-  run(){
+  run(telemetryUpdateRate=100){
     this.publishBirth()
     this.telemetryTimer = setInterval(()=>this.sendTelemetry(),this.reported.telemetryRate.value)
-    setInterval(()=>{this.updateTelemetryValues()},100)
+    setInterval(()=>{this.updateTelemetryValues()},telemetryUpdateRate)
   }
 
   updateTelemetryValues(){
-    console.log('hi')
+    //override this function to read from inputs and/or calculate telemetry
   }
 
 }

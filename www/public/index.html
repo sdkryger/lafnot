@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <title>SCITEK</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <div id="app" class="container-fluid">
+    <nav-component></nav-component>
+    <live-component v-if="view=='live'"></live-component>
+    <historian-component v-if="view=='historian'"></historian-component>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
